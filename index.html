@@ -1,53 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RATP</title>
     <style type="text/css">
-        #station{
-            margin-left:10%;
-            width:80%;
-            padding:5px;
-            border:1px solid gray;
+        #station {
+            margin-left: 10%;
+            width: 80%;
+            padding: 5px;
+            border: 1px solid gray;
             box-shadow: 5px 5px 15px gray;
         }
-        #station-name{
-            font-size:35pt;
+
+        #station-name {
+            font-size: 35pt;
         }
-        #station #lignes > span{
-            margin-left:10px;
+
+        #station #lignes>span {
+            margin-left: 10px;
         }
-        .line-schedule{
+
+        .line-schedule {
             border: 1px solid black;
-    display: inline-block;
-    margin-left: 10px;
-    padding: 5px;
+            display: inline-block;
+            margin-left: 10px;
+            padding: 5px;
+        }
+        #lignes > *{
+            display: inline;
         }
     </style>
 </head>
+
 <body>
     <div id="station">
         station : <div id="station-name">La defense</div>
-        <div id="lignes">
-            <span id="metro-1">1</span>
-            <span id="tramway-2">t2</span>
-            <span id="bus-1">196</span>
-            <span id="rer-a">A</span>
-        </div>
+        <div id="lignes"></div>
     </div>
-    <div id="schedules">
-        <!-- <div class="line-schedule">
-                <div>196</div>
-                <div>dans 1 min destination : hfhfhfh</div>
-                <div>dans 1 min destination : hfhfhfh</div>
-                <div>dans 1 min destination : hfhfhfh</div>
-                <div>dans 1 min destination : hfhfhfh</div>
-                <div>dans 1 min destination : hfhfhfh</div>
-                <div>dans 1 min destination : hfhfhfh</div>
-        </div> -->
-    </div>
+    <div id="schedules"></div>
     <script src="./app/crud.js"></script>
     <script src="./app/app.js"></script>
 </body>
+
 </html>
