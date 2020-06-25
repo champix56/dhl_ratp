@@ -5,10 +5,11 @@ var RestCrud = function (baseUrl) {
                             + (id == undefined ? '' : '/' + id)
                             + (queryString == undefined ? '' : queryString)
                             // + queryString!=undefined && queryString 
-                            ;
+                            console.log(url);        
         xhr.open(method, url);
         xhr.setRequestHeader('Content-Type', 'application/json');
         xhr.setRequestHeader('Accept', 'application/json');
+      
         xhr.onreadystatechange = function (evt) {
             if (evt.currentTarget.readyState < XMLHttpRequest.DONE) return;
             var reponseJS = JSON.parse(evt.currentTarget.response);
