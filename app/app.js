@@ -1,6 +1,6 @@
 // const REST_SERVER='https://cors-anywhere.herokuapp.com/https://api-ratp.pierre-grimaud.fr/v4';
-const REST_SERVER = 'http://2d81ac2d5f1c.ngrok.io';
-const MA_STATION = 'la+defense+(grande+arche)';
+const REST_SERVER = 'http://2b5407db4ab6.ngrok.io';
+const MA_STATION = 'chatelet';
 window.lines = { metros: [], tramways: [], rers: [], buses: [], noctiliens: [] };
 window.transportType = ['metros'];//,'tramways','rers','buses','noctiliens'];
 
@@ -28,19 +28,32 @@ function getSchedules(type, line, station, ar = 'R') {
     lineSchedules.classList.add('line-schedule');
     var lineCode=document.createElement('div');
     lineCode.classList.add('line-code');
-    lineCode.innerHTML='${type}:${line}';
+    // lineCode.innerHTML='${type}:${line}';
+    var imgAdr='/img/';
+    switch(type){
+        case 'metros':imgAdr+='M';break;
+        case 'tramways':imgAdr+='T';break;
+        case 'noctiliens':imgAdr+='Noct-';break;
+        case 'rers':imgAdr+='RER';break;
+        default:break;
+    }
+     
+    imgAdr+=line+'genRVB.svg';
+
+    lineCode.innerHTML='<img src="'+imgAdr+'" class="logo-line"/>';
     lineSchedules.append(lineCode);     
     (new RestCrud(REST_SERVER)).get(e => {
         console.log(e)
-        e.result.schedules.forEach(e => {
+        e.result.schedules.forEach(aSchedule => {
             //dans la div.line-schedule --> append le nouvel horaire
             var schedule=document.createElement('div');
             schedule.classList.add('schedule');
-            schedule.innerHTML='${destination}:${message}';
+            // schedule.innerHTML='${aSchedule.destination}:${aSchedule.message}';
+            schedule.innerHTML=aSchedule.destination+'->'+aSchedule.message;
             lineSchedules.append(schedule);
         });
         document.querySelector('#schedules').append(lineSchedules);
     }, ressourceUrl);
 }
-getSchedules('rers', 'a', 'defense', 'R')
-getSchedules('metros', '1', 'defense', 'R')
+getSchedules('rers', 'b', MA_STATION ,'R')
+getSchedules('metros', '1', MA_STATION, 'R')
