@@ -1,5 +1,5 @@
 // const REST_SERVER='https://cors-anywhere.herokuapp.com/https://api-ratp.pierre-grimaud.fr/v4';
-const REST_SERVER='http://localhost:5000';
+const REST_SERVER='http://2d81ac2d5f1c.ngrok.io';
 const MA_STATION='la+defense+(grande+arche)';
 window.lines={metros:[],tramways:[],rers:[],buses:[],noctiliens:[]};
 window.transportType=['metros'];//,'tramways','rers','buses','noctiliens'];
@@ -27,3 +27,4 @@ function getSchedules(type,line,station, ar='R')
     (new RestCrud(REST_SERVER)).get(e=>{},ressourceUrl);   
 }
 getSchedules('rers','a','defense','R')
+getSchedules('metros','1','defense','R')
