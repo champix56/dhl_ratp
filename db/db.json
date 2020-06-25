@@ -412,7 +412,7 @@
             "version": 4
         }
     },
-    "schedules_tramways_2_la+defense+(grande+arche)_R": {
+    "schedules_tramways_2_defense_R": {
         "result": {
             "schedules": [
                 {
@@ -428,7 +428,7 @@
             "version": 4
         }
     },
-    "schedules_metros_1_la+defense+(grande+arche)_R": {
+    "schedules_metros_1_defense_R": {
         "result": {
             "schedules": [
                 {
@@ -455,7 +455,7 @@
             "version": 4
         }
     },
-    "schedules_rers_a_la+defense+(grande+arche)_R": {
+    "schedules_rers_a_defense_R": {
         "result": {
             "schedules": [
                 {
