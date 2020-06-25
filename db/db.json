@@ -32,7 +32,7 @@
                 },
                 {
                     "name": "La Defense",
-                    "slug": "la+defense"
+                    "slug": "defense"
                 },
                 {
                     "name": "Puteaux",
@@ -203,11 +203,11 @@
                 },
                 {
                     "name": "Esplanade de la Defense",
-                    "slug": "esplanade+de+la+defense"
+                    "slug": "esplanade+de+defense"
                 },
                 {
                     "name": "La Defense (Grande Arche)",
-                    "slug": "la+defense+(grande+arche)"
+                    "slug": "defense"
                 }
             ]
         },
@@ -298,7 +298,7 @@
                 },
                 {
                     "name": "La Defense (Grande Arche)",
-                    "slug": "la+defense+(grande+arche)"
+                    "slug": "defense"
                 },
                 {
                     "name": "Charles de Gaulle-Etoile",
@@ -412,7 +412,171 @@
             "version": 4
         }
     },
-    "schedules_tramways_2_defense_R": {
+    "schedules_metros_1_chatelet_R":{
+        "result": {
+            "schedules": [
+                {
+                    "message": "Train a quai",
+                    "destination": "Chateau de Vincennes"
+                },
+                {
+                    "message": "1 mn",
+                    "destination": "Chateau de Vincennes"
+                },
+                {
+                    "message": "4 mn",
+                    "destination": "Chateau de Vincennes"
+                },
+                {
+                    "message": "5 mn",
+                    "destination": "Chateau de Vincennes"
+                }
+            ]
+        },
+        "_metadata": {
+            "call": "GET /schedules/metros/1/chatelet/R",
+            "date": "2020-06-25T16:15:45+02:00",
+            "version": 4
+        }
+    } ,
+    "schedules_metros_4_chatelet_R":{
+        "result": {
+            "schedules": [
+                {
+                    "message": "1 mn",
+                    "destination": "Porte de Clignancourt"
+                },
+                {
+                    "message": "3 mn",
+                    "destination": "Porte de Clignancourt"
+                },
+                {
+                    "message": "4 mn",
+                    "destination": "Porte de Clignancourt"
+                },
+                {
+                    "message": "6 mn",
+                    "destination": "Porte de Clignancourt"
+                }
+            ]
+        },
+        "_metadata": {
+            "call": "GET /schedules/metros/4/chatelet/R",
+            "date": "2020-06-25T16:18:18+02:00",
+            "version": 4
+        }
+    } ,
+    "schedules_metros_7_chatelet_R":{
+        "result": {
+            "schedules": [
+                {
+                    "message": "0 mn",
+                    "destination": "La Courneuve-8-Mai-1945"
+                },
+                {
+                    "message": "2 mn",
+                    "destination": "La Courneuve-8-Mai-1945"
+                },
+                {
+                    "message": "4 mn",
+                    "destination": "La Courneuve-8-Mai-1945"
+                },
+                {
+                    "message": "7 mn",
+                    "destination": "La Courneuve-8-Mai-1945"
+                }
+            ]
+        },
+        "_metadata": {
+            "call": "GET /schedules/metros/7/chatelet/R",
+            "date": "2020-06-25T16:18:00+02:00",
+            "version": 4
+        }
+    } ,
+    "schedules_metros_11_chatelet_R":{
+        "result": {
+            "schedules": [
+                {
+                    "message": "1 mn",
+                    "destination": "Mairie des Lilas"
+                },
+                {
+                    "message": "3 mn",
+                    "destination": "Mairie des Lilas"
+                },
+                {
+                    "message": "5 mn",
+                    "destination": "Mairie des Lilas"
+                }
+            ]
+        },
+        "_metadata": {
+            "call": "GET /schedules/metros/11/chatelet/R",
+            "date": "2020-06-25T16:18:35+02:00",
+            "version": 4
+        }
+    }  ,
+    "schedules_rers_b_chatelet_R":{
+        "result": {
+            "schedules": [
+                {
+                    "code": "JAZZ",
+                    "message": "Stationne",
+                    "destination": "Denfert-Rochereau"
+                },
+                {
+                    "code": "JAZZ",
+                    "message": "16:44",
+                    "destination": "Denfert-Rochereau"
+                },
+                {
+                    "code": "JAZZ",
+                    "message": "16:57",
+                    "destination": "Denfert-Rochereau"
+                },
+                {
+                    "code": "SORI",
+                    "message": "18:43",
+                    "destination": "Robinson"
+                },
+                {
+                    "code": "POME",
+                    "message": "18:49",
+                    "destination": "Saint-Remy-les-Chevreuse"
+                },
+                {
+                    "code": "KFON",
+                    "message": "18:52",
+                    "destination": "Massy-Palaiseau"
+                }
+            ]
+        },
+        "_metadata": {
+            "call": "GET /schedules/rers/b/chatelet/R",
+            "date": "2020-06-25T16:33:49+02:00",
+            "version": 4
+        }
+    },
+        "schedules_metros_14_chatelet_R":{
+        "result": {
+            "schedules": [
+                {
+                    "message": "2 mn",
+                    "destination": "Olympiades"
+                },
+                {
+                    "message": "3 mn",
+                    "destination": "Olympiades"
+                }
+            ]
+        },
+        "_metadata": {
+            "call": "GET /schedules/metros/14/chatelet/R",
+            "date": "2020-06-25T16:19:03+02:00",
+            "version": 4
+        }
+    } ,
+        "schedules_tramways_2_defense_R": {
         "result": {
             "schedules": [
                 {
@@ -423,7 +587,7 @@
             ]
         },
         "_metadata": {
-            "call": "GET /schedules/tramways/2/la+defense+(grande+arche)/R",
+            "call": "GET /schedules/tramways/2/defense/R",
             "date": "2020-06-25T13:54:20+02:00",
             "version": 4
         }
@@ -450,7 +614,7 @@
             ]
         },
         "_metadata": {
-            "call": "GET /schedules/metros/1/la+defense+(grande+arche)/R",
+            "call": "GET /schedules/metros/1/defense/R",
             "date": "2020-06-25T13:52:59+02:00",
             "version": 4
         }
@@ -491,7 +655,7 @@
             ]
         },
         "_metadata": {
-            "call": "GET /schedules/rers/a/la+defense+(grande+arche)/R",
+            "call": "GET /schedules/rers/a/defense/R",
             "date": "2020-06-25T13:51:41+02:00",
             "version": 4
         }
